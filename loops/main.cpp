@@ -5,6 +5,7 @@ using namespace std;
 int main() {
     string items[3] = {"Medkit", "Pistol", "Grenade"};
     int enemies[5] = {10, 45, 90, 15, 120};
+    
     for (int i = 10; i != 0; i--) {
         cout << i << endl;
     }

@@ -39,7 +39,7 @@ int main() {
     for (int i = 0; i < 3; i++) {
         printStats(squad[i]);
     }
-    
+
     heal(squad[1]);
     printStats(squad[1]);
 }

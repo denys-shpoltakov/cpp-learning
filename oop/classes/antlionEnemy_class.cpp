@@ -19,5 +19,8 @@ public:
 
 int main() {
     Antlion lion(100, "Soldier");
-    lion.takeDamage(101);
+
+    Antlion* pTarget = &lion;
+    pTarget->takeDamage(30);
+    cout << pTarget->m_health;
 }

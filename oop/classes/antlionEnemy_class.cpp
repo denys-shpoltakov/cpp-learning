@@ -22,5 +22,11 @@ int main() {
 
     Antlion* pTarget = &lion;
     pTarget->takeDamage(30);
-    cout << pTarget->m_health;
+    cout << pTarget->m_health << endl;
+
+    Antlion* pLion = new Antlion(100, "Worker");
+    pLion->takeDamage(50);
+    cout << pLion->m_health;
+    delete pLion;
+    pLion = nullptr; // после удаления обьекта через delete ты ОБЯЗАН занулить указатель
 }

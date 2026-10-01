@@ -16,9 +16,18 @@ int main() {
     }
     cout << 6 << endl;
 
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++) {
-        cout << "Hello" << endl;
+    // int n;
+    // cin >> n;
+    // for (int i = 0; i < n; i++) {
+    //     cout << "Hello" << endl;
+    // }
+    // put your code here
+    string out;
+    cin >> out;
+    int counts;
+    cin >> counts;
+    for (int i = 0; i < counts; i++) {
+        cout << out << endl;
     }
+    return 0;
 }

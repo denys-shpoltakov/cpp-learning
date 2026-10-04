@@ -8,9 +8,21 @@ int main() {
     // nums[1] = nums[0] + nums[1];
     // nums[2] = nums[1] + nums[2];
     // nums[3] = nums[2] + nums[3];
-    for (int i = 0; i < nums.size(); i++) {
-        // продолжу на работе
+    for (int i = 1; i < nums.size(); i++) {
+        nums[i] = nums[i - 1] + nums[i];
     }
+
+    // второе решение
+
+    std::vector<int> result;
+    int sum = 0; // накопительная переменная
+
+    for (int i = 0; i < nums.size(); i++) {
+        sum = sum + nums[i];
+        // result.push_back(sum);
+    }
+
+    // return result;
 
     for (int i = 0; i < nums.size(); i++) {
         std::cout << nums[i] << " ";

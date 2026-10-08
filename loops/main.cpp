@@ -1,23 +1,27 @@
 #include <iostream>
-
-using namespace std;
+#include <vector>
+#include <string>
 
 int main() {
-    string items[3] = {"Medkit", "Pistol", "Grenade"};
+    std::vector<std::string> items = {"Medkit", "Pistol", "Crowbar"}; 
     int enemies[5] = {10, 45, 90, 15, 120};
     
-    for (int i = 10; i != 0; i--) {
-        cout << i << endl;
+    for (int i = 10; i != 0; --i) {
+        std::cout << i << std::endl;
     }
-    cout << "BOOM!" << endl;
-    for (int i = 0; i < 3; i++) {
-        cout << items[i] << " " << endl;
+    std::cout << "BOOM!" << std::endl;
+    // for (int i = 0; i < 3; i++) {
+    //     cout << items[i] << " " << endl;
+    // }
+    for ( int i = 0; i < items.size(); ++i) {
+        std::cout << items[i] << " " << std::endl;
     }
-    for (int i = 0; i < 5; i++) {
+
+    for (int i = 0; i < 5; ++i) {
         if (enemies[i] > 80) {
-            cout << "Enemy: " << i << ": CRITICAL DANGER!" << endl;
+            std::cout << "Enemy: " << i << ": CRITICAL DANGER!" << std::endl;
         } else {
-            cout << "Enemy: " << i << ": Normal" << endl;
+            std::cout << "Enemy: " << i << ": Normal" << std::endl;
         }
     }
 }
